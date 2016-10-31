@@ -3,7 +3,7 @@ import sys
 import webbrowser
 import bs4
 
-print('Googling...') #Display message while retrieving the Google page
+print('Googling...')
 
 res = requests.get('http://google.com/search?q=' + ' '.join(sys.argv[1:]))
 res.raise_for_status()
